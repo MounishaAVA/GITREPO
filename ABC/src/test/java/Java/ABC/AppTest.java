@@ -50,7 +50,7 @@ public class AppTest
         
         //Copy the file to a location and use try catch block to handle exception
         try {
-            FileUtils.copyFile(screenshot, new File("D:\\Selenium Automation\\homePageScreenshot.png"));
+            FileUtils.copyFile(screenshot, new File("E:\\homePageScreenshot.png"));
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
