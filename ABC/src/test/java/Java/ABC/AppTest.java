@@ -30,9 +30,11 @@ public class AppTest
 	public void Test2() throws Exception{ 
 		
 		WebDriverManager.chromedriver().setup();
-        // Initialize browser
-        WebDriver driver = new ChromeDriver();
-        
+
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless");
+		
+		WebDriver driver = new ChromeDriver(options);
 
         //Dont maximize Chrome by below line, because has no display
         driver.manage().window().maximize();
@@ -40,6 +42,8 @@ public class AppTest
         
         //navigate to url
         driver.get("https://demoqa.com");
+        
+        System.out.println("Hello");
         
        //Take the screenshot
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
