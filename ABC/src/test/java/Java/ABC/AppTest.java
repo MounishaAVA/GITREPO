@@ -46,7 +46,7 @@ public class AppTest
         }
         
         //closing the webdriver
-        driver.close();
+        driver.quit();
     }
 
 }
