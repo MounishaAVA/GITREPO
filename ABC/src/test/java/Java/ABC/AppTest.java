@@ -11,6 +11,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -31,6 +32,11 @@ public class AppTest
 		WebDriverManager.chromedriver().setup();
         // Initialize browser
         WebDriver driver = new ChromeDriver();
+        
+
+        //Dont maximize Chrome by below line, because has no display
+        driver.manage().window().maximize();
+
         
         //navigate to url
         driver.get("https://demoqa.com");
