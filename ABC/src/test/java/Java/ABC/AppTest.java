@@ -32,12 +32,10 @@ public class AppTest
 		WebDriverManager.chromedriver().setup();
 
 		ChromeOptions options = new ChromeOptions();
+		
 		options.addArguments("--headless");
 		
 		WebDriver driver = new ChromeDriver(options);
-
-        //Dont maximize Chrome by below line, because has no display
-        driver.manage().window().maximize();
 
         
         //navigate to url
