@@ -35,6 +35,8 @@ public class AppTest
 		
 		options.addArguments("--headless");
 		
+		options.addArguments("window-size=1980,1080");
+		
 		WebDriver driver = new ChromeDriver(options);
 
         
