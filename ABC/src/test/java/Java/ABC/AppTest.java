@@ -12,6 +12,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -36,6 +37,10 @@ public class AppTest
 		options.addArguments("--headless");
 		
 		options.addArguments("window-size=1980,1080");
+		
+		DesiredCapabilities capabilities = new DesiredCapabilities();
+		capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+		options.merge(capabilities);
 		
 		WebDriver driver = new ChromeDriver(options);
 
