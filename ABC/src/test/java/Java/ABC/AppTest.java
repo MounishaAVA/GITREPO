@@ -34,6 +34,7 @@ public class AppTest
 
 		ChromeOptions options = new ChromeOptions();
 		
+		
 		options.addArguments("--headless");
 		
 		options.addArguments("window-size=1980,1080");
