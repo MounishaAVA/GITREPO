@@ -39,10 +39,6 @@ public class AppTest
 		
 		options.addArguments("window-size=1980,1080");
 		
-		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-		options.merge(capabilities);
-		
 		WebDriver driver = new ChromeDriver(options);
 
         
@@ -56,7 +52,7 @@ public class AppTest
         
         //Copy the file to a location and use try catch block to handle exception
         try {
-            FileUtils.copyFile(screenshot, new File("E:\\homePageScreenshot.png"));
+            FileUtils.copyFile(screenshot, new File("E:\\ss\\3.png"));
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
