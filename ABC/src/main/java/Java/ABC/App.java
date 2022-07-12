@@ -23,7 +23,6 @@ public class App {
 	@Test
 
 	public void Ctest() throws IOException {
-
 		
 
 		WebDriverManager.chromedriver().setup();
