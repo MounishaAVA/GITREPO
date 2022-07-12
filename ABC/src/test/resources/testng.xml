@@ -13,8 +13,7 @@
 				<include name="fftest1/">
 
 			</methods>
-			</class-->
-		
+			</class-->		
 		
 			<class name="Java.ABC.AppTest" >
 
