@@ -27,8 +27,7 @@ public class App {
 
 		WebDriverManager.chromedriver().setup();
 
-		ChromeOptions options = new ChromeOptions();
-		
+		ChromeOptions options = new ChromeOptions();		
 			
 		options.addArguments("--headless");
 		
